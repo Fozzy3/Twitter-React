@@ -6,7 +6,16 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+
+# Comandos a Ejecutar
+
+## `cd twitter`
+
+Primero deben acceder a la carpeta twitter
+
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Inicializan el programa y se les debera abirir en su navegardor
+
+-- El digo que deben copiar y pegar en JS esta en el componente /components/Noticias.js , esta señalado con un comentario.
+

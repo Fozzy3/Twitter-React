@@ -21,29 +21,58 @@ return (
         </div>
         <div className="publish">
             <div className="escribir_twitit">
-                <textarea id="textarea" placeholder="Whas's happening?" maxLength="140"></textarea>
+                <textarea id="textarea" placeholder=" Whas's happening?" maxLength="140"></textarea>
                 <div className="everyone">
-                    <p><FontAwesomeIcon className="icono" icon={faGlobeAmericas} />Everyone can reply</p>
+                    <p>
+                        <FontAwesomeIcon className="icono" icon={faGlobeAmericas} />Everyone can reply</p>
                 </div>
             </div>
             <div className="opciones_twitit">
                 <div className="iconos">
-                <FontAwesomeIcon className="icono" icon={faImage} />
-            <FontAwesomeIcon className="icono" icon={faGift} />
-            <FontAwesomeIcon className="icono" icon={faChartBar} />
-            <FontAwesomeIcon className="icono" icon={faSmile} />
-            <FontAwesomeIcon className="icono" icon={faCalendarAlt} />
+                    <FontAwesomeIcon className="icono" icon={faImage} />
+                    <FontAwesomeIcon className="icono" icon={faGift} />
+                    <FontAwesomeIcon className="icono" icon={faChartBar} />
+                    <FontAwesomeIcon className="icono" icon={faSmile} />
+                    <FontAwesomeIcon className="icono" icon={faCalendarAlt} />
                 </div>
-            
-            <div className="twitear">
-                <p>Tweet</p>
-            </div>
+                <div className="twitear">
+                    <p>Tweet</p>
+                </div>
             </div>
         </div>
     </div>
+    <div className="muro_noticias">
 
 
-    <div className="noticias">
+        {/*Codigo de Creacion de una Noticia*/}
+        <div className="noticia">
+            <div className="user_">
+                <FontAwesomeIcon className="icono" icon={faUser} />
+            </div>
+            <div className="contenido_noticia">
+                <div className="user_name">
+                    <p>UsuarioEjemplo <span>@EJmp · 2021-09-21</span> </p>
+                </div>
+                <div className="noticias_twetit">
+                    <p>Hola soy un ejemplo de noticia :) Soy el contenido Principañ</p>
+                </div>
+            </div>
+        </div>
+        {/*Fin de Codigo de Creacion de una Noticia*/}
+        <div className="noticia">
+            <div className="user_">
+                <FontAwesomeIcon className="icono" icon={faUser} />
+            </div>
+            <div className="contenido_noticia">
+                <div className="user_name">
+                    <p>Otro Ejemplo Facharito <span>@Otrsdj · 2021-09-21</span> </p>
+                </div>
+                <div className="noticias_twetit">
+                    <p>Soy otro ejemplo de noticia aun mas facherito que el anterior UwU</p>
+                </div>
+            </div>
+        </div>
+
 
     </div>
 </div>
