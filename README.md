@@ -1,21 +1,15 @@
-# Getting Started with Create React App
+# Api Giweb
+Programa realizado en React.js, para el grupo de trabajo Giweb de la Universidad Distrital 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Comandos a Ejecutar
 
-## Available Scripts
+## `npm install`
 
-In the project directory, you can run:
-
-
-# Comandos a Ejecutar
-
-## `cd twitter`
-
-Primero deben acceder a la carpeta twitter
+Ejecuta las dependencias necesarias iconos, react, etc...
 
 ### `npm start`
 
 Inicializan el programa y se les debera abirir en su navegardor
 
--- El digo que deben copiar y pegar en JS esta en el componente /components/Noticias.js , esta señalado con un comentario.
+-- El codigo que deben copiar y pegar para hacer las noticas en JS esta en el componente /components/Noticias.js , esta señalado con un comentario.
 
