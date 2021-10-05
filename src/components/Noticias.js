@@ -16,7 +16,7 @@ import {
 
 export default function Noticias() {
   return (
-    <div className="noticias">
+    <>
       <div className="home_">
         <h2>Home</h2>
         <h2>
@@ -56,6 +56,6 @@ export default function Noticias() {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
