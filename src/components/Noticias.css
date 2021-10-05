@@ -137,6 +137,9 @@
   cursor: pointer;
 }
 
+.opciones_twitit .twitear p:hover {
+}
+
 @media only screen and (max-width: 1324px) {
   .opciones_twitit .twitear {
     margin-right: 1rem;
