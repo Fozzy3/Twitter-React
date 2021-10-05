@@ -1,4 +1,4 @@
-import React from 'react'
+/*import React from 'react'
 import './Noticias.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faStar, faImage, faChartBar, faSmile, faCalendarAlt} from '@fortawesome/free-regular-svg-icons'
@@ -44,7 +44,8 @@ return (
     <div className="muro_noticias">
 
 
-        {/*Codigo de Creacion de una Noticia*/}
+      
+        
         <div className="noticia">
             <div className="user_">
                 <FontAwesomeIcon className="icono" icon={faUser} />
@@ -58,7 +59,7 @@ return (
                 </div>
             </div>
         </div>
-        {/*Fin de Codigo de Creacion de una Noticia*/}
+     
         <div className="noticia">
             <div className="user_">
                 <FontAwesomeIcon className="icono" icon={faUser} />
@@ -78,3 +79,5 @@ return (
 </div>
 )
 }
+
+*/
