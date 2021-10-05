@@ -25,6 +25,30 @@
   padding: 0;
 }
 
+.socialIcon {
+  font-size: 1em;
+  color: var(--white);
+  margin: 0 3em;
+  cursor: pointer;
+  transition: all 0.25s ease-in;
+}
+.socialIcon:first-child {
+  margin: 0;
+}
+.socialIcon:last-child {
+  margin: 0;
+}
+
+.socialIcon:hover {
+  color: var(--azul);
+}
+
+.muro_noticias {
+  background-color: #010001;
+}
+
+/* News content */
+
 .noticia {
   display: grid;
   grid-template-columns: 10% 90%;
@@ -51,6 +75,12 @@
   font-size: 0.8em;
 }
 
+.contenido_noticia .user_name p span span {
+  font-size: 0.95em;
+  position: absolute;
+  right: 5em;
+}
+
 .contenido_noticia .noticias_twetit {
   width: 100%;
   overflow-wrap: anywhere;
@@ -65,4 +95,47 @@
   color: var(--white);
   padding-right: 80px;
   line-height: 20px;
+}
+
+/* Scrollbar styling */
+
+::-webkit-scrollbar {
+  width: 14px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  height: 6px;
+  border: 3.5px solid rgba(0, 0, 0, 0);
+  background-clip: padding-box;
+  background-color: hsl(90, 7%, 58%);
+  -webkit-border-radius: 7px;
+  -webkit-box-shadow: inset -1px -1px 0px rgba(0, 0, 0, 0.05),
+    inset 1px 1px 0px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-color: hsl(90, 7%, 40%);
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+@media only screen and (max-width: 1024px) {
+  .noticias {
+    width: 275%;
+  }
+}
+
+@media only screen and (max-width: 924px) {
+  .noticias {
+    width: 260%;
+  }
 }

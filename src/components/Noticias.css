@@ -25,6 +25,8 @@
   color: var(--white);
   font-size: 0.6em;
   font-family: Roboto_R;
+  margin: 10px 20px;
+  cursor: pointer;
 }
 
 .publicar {
@@ -133,4 +135,10 @@
   font-family: Roboto_B;
   font-size: 1em;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 1324px) {
+  .opciones_twitit .twitear {
+    margin-right: 1rem;
+  }
 }

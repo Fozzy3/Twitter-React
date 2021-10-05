@@ -32,7 +32,7 @@ export default function Noticias() {
           <div className="escribir_twitit">
             <textarea
               id="textarea"
-              placeholder=" Whas's happening?"
+              placeholder=" What's happening?"
               maxLength="140"
             ></textarea>
             <div className="everyone">
