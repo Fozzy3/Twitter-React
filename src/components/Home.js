@@ -3,10 +3,12 @@ import './Home.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faHome, faHashtag, faBell, faEnvelope, faBookmark, faList, faEllipsisH, faUser} from '@fortawesome/free-solid-svg-icons'
 import { faTwitter } from '@fortawesome/free-brands-svg-icons'
+import Peticiones from './Peticiones';
 
 
 
 export default function Home() {
+    <Peticiones/>
     return (
         <div className="home">
                 <div className="menus">

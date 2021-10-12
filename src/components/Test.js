@@ -3,6 +3,8 @@ import "./Test.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRetweet, faUser } from "@fortawesome/free-solid-svg-icons";
 import { faComment, faHeart } from "@fortawesome/free-regular-svg-icons";
+import axios from "axios";
+import Noticias from "./Noticias";
 
 class Tweets extends Component {
   constructor(props) {
@@ -14,13 +16,22 @@ class Tweets extends Component {
   }
 
   async componentDidMount() {
-    const response = await fetch(
-      "https://saldatweets.herokuapp.com/publications"
-    );
-    const data = await response.json();
-    console.log(data);
-    this.setState({ tweet: data });
+    this.getTweets();
   }
+
+  getTweets = async () => {
+    const res = await axios.get(
+      "https://saldatweets.herokuapp.com/publications/"
+    );
+    this.setState({
+      tweet: res.data,
+    });
+  };
+
+  deleteUser = async (id) => {
+    //wait axios.delete("https://saldatweets.herokuapp.com/publications/" + id);
+    console.log(id);
+  };
 
   renderTweets = () => {
     return (
@@ -31,7 +42,7 @@ class Tweets extends Component {
               <div className="user_">
                 <FontAwesomeIcon className="icono" icon={faUser} />
               </div>
-              <div className="contenido_noticia">
+              <div className="contenido_noticia" key={x._id}>
                 <div className="user_name">
                   <p>
                     {x.author}{" "}

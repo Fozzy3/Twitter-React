@@ -124,6 +124,7 @@
   color: #fff;
   border-radius: 1.2em;
   background-color: #1d9af1;
+  border-color: #1d9af1;
   width: auto;
   padding: 18px 20px;
   height: 30px;
@@ -137,11 +138,37 @@
   cursor: pointer;
 }
 
-.opciones_twitit .twitear p:hover {
+#new-tweet {
+  background-color: #000;
+  color: #1d9af1;
+  border-radius: 5px;
+  border-color: #000;
+  position: relative;
+  left: 15px;
+}
+
+#new-tweet:focus {
+  border: 0;
+  box-shadow: none;
+  outline: none;
 }
 
 @media only screen and (max-width: 1324px) {
   .opciones_twitit .twitear {
     margin-right: 1rem;
   }
+}
+
+#author {
+  font-size: 20px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 5px;
+  border-color: #000;
+}
+
+#author:focus {
+  border: 0;
+  box-shadow: none;
+  outline: none;
 }
